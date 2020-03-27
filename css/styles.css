@@ -1,0 +1,17 @@
+body{
+  background-image: url(images/background-balance-business-commerce-583846.jpg);
+  background-size: cover;
+  text-align: center;
+}
+h1{
+  color:blue;
+  font-size: xx-large;
+}
+h2{
+  font-size: x-large;
+  color: red;
+}
+p{
+  font-weight: bold;
+  color: yellow;
+}
