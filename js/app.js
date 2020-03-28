@@ -3,7 +3,9 @@
 /* Greeting the User*/
 
 var userName = prompt('What is your name?');
-console.log('This is the answer to username promt: ' + userName);
+
+// console.log('This is the answer to username promt: ' + userName);
+
 alert('Hi ' + userName + '! Welcome to my about me site!');
 
 /*First part of the code should be a button that they click when they are ready to take the quiz*/
@@ -11,7 +13,7 @@ alert('Hi ' + userName + '! Welcome to my about me site!');
 /*The button should then prompt the set of questions to run*/
 var whereFrom = prompt('Am I from New Jersey?').toLowerCase();//prompt question 1
 
-console.log('This is the answer to whereFrom promt: ' + whereFrom);
+// console.log('This is the answer to whereFrom promt: ' + whereFrom);
 
 /* If-else statement for correct answer*/
 
@@ -25,7 +27,7 @@ if(whereFrom === 'yes'|| whereFrom === 'y'){
 
 var degree = prompt('Is my degree in computer science?').toLowerCase(); //prompt question 2
 
-console.log('This is the answer to degree promt: ' + degree);
+// console.log('This is the answer to degree promt: ' + degree);
 
 /* If-else statement for correct answer*/
 
@@ -40,7 +42,7 @@ if(degree === 'yes'|| degree === 'y'){
 
 var navy = prompt('Did I join the Marines?').toLowerCase(); //prompt question 3
 
-console.log('This is the answer to navy promt: ' + navy);
+// console.log('This is the answer to navy promt: ' + navy);
 
 /* If-else statement for correct answer*/
 
@@ -55,7 +57,7 @@ if(navy === 'yes'|| navy === 'y'){
 
 var job = prompt('Do I work for Amazon?').toLowerCase(); //prompt question 4
 
-console.log('This is the answer to the job promt: ' + job);
+// console.log('This is the answer to the job promt: ' + job);
 
 /* If-else statement for correct answer*/
 
@@ -70,7 +72,7 @@ if(job === 'yes'|| job === 'y'){
 
 var goal = prompt('Is my #1 Goal is to graduate Code Fellows?').toLowerCase(); //prompt question 5
 
-console.log('This is the answer to the goal promt: ' + goal);
+// console.log('This is the answer to the goal promt: ' + goal);
 
 /* If-else statement for correct answer*/
 
