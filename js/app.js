@@ -85,20 +85,23 @@ function askJob(){
 askJob();
 
 //prompt question 5
-var goal = prompt('Is my #1 Goal is to graduate Code Fellows?').toLowerCase();
+function askGoal(){
+  var goal = prompt('Is my #1 Goal is to graduate Code Fellows?').toLowerCase();
 
-// console.log('This is the answer to the goal promt: ' + goal);
+  // console.log('This is the answer to the goal promt: ' + goal);
 
-/* If-else statement for correct answer*/
+  /* If-else statement for correct answer*/
 
-if(goal === 'yes'|| goal === 'y'){
-  alert('HELL YES it is!!!');
-  counter++;
-}else if (goal === 'no' || goal === 'n'){
-  alert('Hmmmmmmm...lets think about this one again');
-}else {
-  alert('Please answer using yes or no');
+  if(goal === 'yes'|| goal === 'y'){
+    alert('HELL YES it is!!!');
+    counter++;
+  }else if (goal === 'no' || goal === 'n'){
+    alert('Hmmmmmmm...lets think about this one again');
+  }else {
+    alert('Please answer using yes or no');
+  }
 }
+askGoal();
 
 //Question 6
 
