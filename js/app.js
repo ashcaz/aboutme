@@ -30,20 +30,23 @@ function askWhereFrom (){
 askWhereFrom();
 
 //prompt question 2
-var degree = prompt('Is my degree in computer science?').toLowerCase();
+function askDegree(){
+  var degree = prompt('Is my degree in computer science?').toLowerCase();
 
-// console.log('This is the answer to degree promt: ' + degree);
+  // console.log('This is the answer to degree promt: ' + degree);
 
-/* If-else statement for correct answer*/
+  /* If-else statement for correct answer*/
 
-if(degree === 'yes'|| degree === 'y'){
-  alert('Are you sure??');
-}else if (degree === 'no' || degree === 'n'){
-  alert('Absolutely right! I have a Biology dgree!');
-  counter++;
-}else {
-  alert('Please answer using yes or no');
+  if(degree === 'yes'|| degree === 'y'){
+    alert('Are you sure??');
+  }else if (degree === 'no' || degree === 'n'){
+    alert('Absolutely right! I have a Biology dgree!');
+    counter++;
+  }else {
+    alert('Please answer using yes or no');
+  }
 }
+askDegree();
 
 //prompt question 3
 var navy = prompt('Did I join the Marines?').toLowerCase();
