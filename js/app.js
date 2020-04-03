@@ -141,52 +141,55 @@ askAge();
 //Question 7
 
 //Put the 6 states I lived in other than Washington are placed into an Array
-var statesLivedIn = ['new york','new jersey','california', 'florida', 'conneticut', 'mississippi'];
+function askStatesLivedIn(){
+  var statesLivedIn = ['new york','new jersey','california', 'florida', 'conneticut', 'mississippi'];
 
-//Create a For loop that allows the user to attempt 6 answers
-for(var i = 0; i < 6; i++){
+  //Create a For loop that allows the user to attempt 6 answers
+  for(var i = 0; i < 6; i++){
 
-  //prompt the user for an answer
-  var statesUserAnswer = prompt('Can you name a state I have lived in other than Washington?').toLowerCase();
+    //prompt the user for an answer
+    var statesUserAnswer = prompt('Can you name a state I have lived in other than Washington?').toLowerCase();
 
-  // console.log('This is the answer to states lived in question: ' + statesUserAnswer);
+    // console.log('This is the answer to states lived in question: ' + statesUserAnswer);
 
-  if(statesUserAnswer === statesLivedIn[0]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
+    if(statesUserAnswer === statesLivedIn[0]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else if(statesUserAnswer === statesLivedIn[1]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else if(statesUserAnswer === statesLivedIn[2]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else if(statesUserAnswer === statesLivedIn[3]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else if(statesUserAnswer === statesLivedIn[4]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else if(statesUserAnswer === statesLivedIn[5]){
+      alert('Wow! That was a good guess! I have lived in that state!');
+      counter++;
+      break;
+    }
+    else{
+      alert('Nope! Try again!');
+    }
   }
-  else if(statesUserAnswer === statesLivedIn[1]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
-  }
-  else if(statesUserAnswer === statesLivedIn[2]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
-  }
-  else if(statesUserAnswer === statesLivedIn[3]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
-  }
-  else if(statesUserAnswer === statesLivedIn[4]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
-  }
-  else if(statesUserAnswer === statesLivedIn[5]){
-    alert('Wow! That was a good guess! I have lived in that state!');
-    counter++;
-    break;
-  }
-  else{
-    alert('Nope! Try again!');
+  if(i === 6){
+    alert('You had too many attempts. I have lived in New Jersey, New York, Conneticut, Mississippi, Florida and California!');
   }
 }
-if(i === 6){
-  alert('You had too many attempts. I have lived in New Jersey, New York, Conneticut, Mississippi, Florida and California!');
-}
+askStatesLivedIn();
 
 alert('Thank you for playing and taking the time to get to know me. You got ' + counter + ' questions right! See you again soon ' + userName + '!');
