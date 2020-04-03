@@ -1,5 +1,11 @@
 # aboutme
 
+## Lab 4: 4/2
+## Driver: Kim Damalas; Navigator: Ashley Casimir
+## We worked on the functions together
+
+___________
+
 **due 3/26**
 As a user, I would like to learn about the site owner so I can get to know them better..
 

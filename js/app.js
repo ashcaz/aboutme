@@ -11,20 +11,23 @@ alert('Hi ' + userName + '! Welcome to my about me site!');
 var counter = 0;
 
 //prompt question 1
-var whereFrom = prompt('Am I from New Jersey?').toLowerCase();
+function askWhereFrom (){
+  var whereFrom = prompt('Am I from New Jersey?').toLowerCase();
 
-// console.log('This is the answer to whereFrom promt: ' + whereFrom);
+  // console.log('This is the answer to whereFrom promt: ' + whereFrom);
 
-/* If-else statement for correct answer*/
+  /* If-else statement for correct answer*/
 
-if(whereFrom === 'yes'|| whereFrom === 'y'){
-  alert('You are correct!! You sure do pay attention!');
-  counter++;
-}else if (whereFrom === 'no'|| whereFrom === 'n'){
-  alert('WRONG!');
-}else {
-  alert('Whoops! You should probably answer using yes or no');
+  if(whereFrom === 'yes'|| whereFrom === 'y'){
+    alert('You are correct!! You sure do pay attention!');
+    counter++;
+  }else if (whereFrom === 'no'|| whereFrom === 'n'){
+    alert('WRONG!');
+  }else {
+    alert('Whoops! You should probably answer using yes or no');
+  }
 }
+askWhereFrom();
 
 //prompt question 2
 var degree = prompt('Is my degree in computer science?').toLowerCase();
