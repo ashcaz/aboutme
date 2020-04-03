@@ -67,19 +67,22 @@ function askNavy(){
 askNavy();
 
 //prompt question 4
-var job = prompt('Do I work for Amazon?').toLowerCase();
-// console.log('This is the answer to the job promt: ' + job);
+function askJob(){
+  var job = prompt('Do I work for Amazon?').toLowerCase();
+  // console.log('This is the answer to the job promt: ' + job);
 
-/* If-else statement for correct answer*/
+  /* If-else statement for correct answer*/
 
-if(job === 'yes'|| job === 'y'){
-  alert('I do not work at Amazon...yet');
-}else if (job === 'no' || job === 'n'){
-  alert('Way to Go! You are correct. I work for Oracle Cloud Infastructure.');
-  counter++;
-}else {
-  alert('Please answer using yes or no');
+  if(job === 'yes'|| job === 'y'){
+    alert('I do not work at Amazon...yet');
+  }else if (job === 'no' || job === 'n'){
+    alert('Way to Go! You are correct. I work for Oracle Cloud Infastructure.');
+    counter++;
+  }else {
+    alert('Please answer using yes or no');
+  }
 }
+askJob();
 
 //prompt question 5
 var goal = prompt('Is my #1 Goal is to graduate Code Fellows?').toLowerCase();
