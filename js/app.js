@@ -49,19 +49,22 @@ function askDegree(){
 askDegree();
 
 //prompt question 3
-var navy = prompt('Did I join the Marines?').toLowerCase();
-// console.log('This is the answer to navy promt: ' + navy);
+function askNavy(){
+  var navy = prompt('Did I join the Marines?').toLowerCase();
+  // console.log('This is the answer to navy promt: ' + navy);
 
-/* If-else statement for correct answer*/
+  /* If-else statement for correct answer*/
 
-if(navy === 'yes'|| navy === 'y'){
-  alert('A Jarhead I was not');
-}else if (navy === 'no' || navy === 'n'){
-  alert('You are good at this. I joined the worlds greatest Navy! Hooyah!!');
-  counter++;
-}else {
-  alert('Please answer using yes or no');
+  if(navy === 'yes'|| navy === 'y'){
+    alert('A Jarhead I was not');
+  }else if (navy === 'no' || navy === 'n'){
+    alert('You are good at this. I joined the worlds greatest Navy! Hooyah!!');
+    counter++;
+  }else {
+    alert('Please answer using yes or no');
+  }
 }
+askNavy();
 
 //prompt question 4
 var job = prompt('Do I work for Amazon?').toLowerCase();
