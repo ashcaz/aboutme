@@ -105,37 +105,38 @@ askGoal();
 
 //Question 6
 
+function askAge(){
+  var correctAge = false;
+  var userAttempts = 0;
 
-var correctAge = false;
-var userAttempts = 0;
+  while (correctAge === false && userAttempts < 4){
 
-while (correctAge === false && userAttempts < 4){
+    var age = prompt(userName + ', how old do you think I am?');
 
-  var age = prompt(userName + ', how old do you think I am?');
+    // console.log('This is the answer to age question: ' + age);
 
-  // console.log('This is the answer to age question: ' + age);
+    if (age === '32') {
+      alert('I know, I know. I don\'t look 32. But your guess is correct');
+      correctAge = true;
+      counter++;
+    }
+    else if (age > '32'){
+      alert( 'Wow! You think i\'m that old?!? Try something lower.');
+    }
+    else if (age < '32'){
+      alert ('I\'m flattered! But you should guess higher.');
+    }
 
-  if (age === '32') {
-    alert('I know, I know. I don\'t look 32. But your guess is correct');
-    correctAge = true;
-    counter++;
+    userAttempts++;
+
+    // console.log('This is the amount of user attempts: ' + userAttempts);
   }
-  else if (age > '32'){
-    alert( 'Wow! You think i\'m that old?!? Try something lower.');
-  }
-  else if (age < '32'){
-    alert ('I\'m flattered! But you should guess higher.');
-  }
 
-  userAttempts++;
-
-  // console.log('This is the amount of user attempts: ' + userAttempts);
+  if (correctAge === false && userAttempts === 4){
+    alert('Oh No! You guessed too many times. I\'m 32 years old.');
+  }
 }
-
-if (correctAge === false && userAttempts === 4){
-  alert('Oh No! You guessed too many times. I\'m 32 years old.');
-}
-
+askAge();
 
 //Question 7
 
