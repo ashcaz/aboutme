@@ -182,8 +182,10 @@ function askStatesLivedIn(){
       counter++;
       break;
     }
-    else{
-      alert('Nope! Try again!');
+    else {
+      if(i !== 6){
+        alert('Nope! Try again!');
+      }
     }
   }
   if(i === 6){
