@@ -153,32 +153,32 @@ function askStatesLivedIn(){
     // console.log('This is the answer to states lived in question: ' + statesUserAnswer);
 
     if(statesUserAnswer === statesLivedIn[0]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New Jersey, Cailifornia, Florida, Conneticut and Mississippi.');
       counter++;
       break;
     }
     else if(statesUserAnswer === statesLivedIn[1]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New York, Cailifornia, Florida, Conneticut and Mississippi.');
       counter++;
       break;
     }
     else if(statesUserAnswer === statesLivedIn[2]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New York, New Jersey, Florida, Conneticut and Mississippi.');
       counter++;
       break;
     }
     else if(statesUserAnswer === statesLivedIn[3]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New York, New Jersey, California, Conneticut and Mississippi.');
       counter++;
       break;
     }
     else if(statesUserAnswer === statesLivedIn[4]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New York, New Jersey, California, Florida and Mississippi.');
       counter++;
       break;
     }
     else if(statesUserAnswer === statesLivedIn[5]){
-      alert('Wow! That was a good guess! I have lived in that state!');
+      alert('Wow! That was a good guess! I have lived in that state! I have also lived in New York, New Jersey, California, Florida and Conneticut.');
       counter++;
       break;
     }
@@ -192,4 +192,4 @@ function askStatesLivedIn(){
 }
 askStatesLivedIn();
 
-alert('Thank you for playing and taking the time to get to know me. You got ' + counter + ' questions right! See you again soon ' + userName + '!');
+alert('Thank you for playing and taking the time to get to know me. You got ' + counter + ' out of 7 questions right! See you again soon ' + userName + '!');
