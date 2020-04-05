@@ -4,17 +4,14 @@
 
 var userName = prompt('What is your name?');
 
-// console.log('This is the answer to username promt: ' + userName);
-
 alert('Hi ' + userName + '! Welcome to my about me site!');
 
+//esablish a counter for correct answers
 var counter = 0;
 
 //prompt question 1
 function askWhereFrom (){
   var whereFrom = prompt('Am I from New Jersey?').toLowerCase();
-
-  // console.log('This is the answer to whereFrom promt: ' + whereFrom);
 
   /* If-else statement for correct answer*/
 
@@ -33,8 +30,6 @@ askWhereFrom();
 function askDegree(){
   var degree = prompt('Is my degree in computer science?').toLowerCase();
 
-  // console.log('This is the answer to degree promt: ' + degree);
-
   /* If-else statement for correct answer*/
 
   if(degree === 'yes'|| degree === 'y'){
@@ -51,7 +46,6 @@ askDegree();
 //prompt question 3
 function askNavy(){
   var navy = prompt('Did I join the Marines?').toLowerCase();
-  // console.log('This is the answer to navy promt: ' + navy);
 
   /* If-else statement for correct answer*/
 
@@ -69,7 +63,6 @@ askNavy();
 //prompt question 4
 function askJob(){
   var job = prompt('Do I work for Amazon?').toLowerCase();
-  // console.log('This is the answer to the job promt: ' + job);
 
   /* If-else statement for correct answer*/
 
@@ -87,8 +80,6 @@ askJob();
 //prompt question 5
 function askGoal(){
   var goal = prompt('Is my #1 Goal is to graduate Code Fellows?').toLowerCase();
-
-  // console.log('This is the answer to the goal promt: ' + goal);
 
   /* If-else statement for correct answer*/
 
@@ -113,8 +104,6 @@ function askAge(){
 
     var age = prompt(userName + ', how old do you think I am?');
 
-    // console.log('This is the answer to age question: ' + age);
-
     if (age === '32') {
       alert('I know, I know. I don\'t look 32. But your guess is correct');
       correctAge = true;
@@ -128,8 +117,6 @@ function askAge(){
     }
 
     userAttempts++;
-
-    // console.log('This is the amount of user attempts: ' + userAttempts);
   }
 
   if (correctAge === false && userAttempts === 4){
@@ -149,8 +136,6 @@ function askStatesLivedIn(){
 
     //prompt the user for an answer
     var statesUserAnswer = prompt('Can you name a state I have lived in other than Washington?').toLowerCase();
-
-    // console.log('This is the answer to states lived in question: ' + statesUserAnswer);
 
     if(statesUserAnswer === statesLivedIn[0]){
       alert('Wow! That was a good guess! I have lived in that state! I have also lived in New Jersey, Cailifornia, Florida, Conneticut and Mississippi.');
